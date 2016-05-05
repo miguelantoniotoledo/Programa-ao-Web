@@ -1,0 +1,20 @@
+.dados{
+  background-color: #700000 ;
+}
+
+body{
+  background-color: #336699;
+  color: white;
+}  
+
+form{
+  font-weight: bold;
+}
+
+.link1{
+  color: black;	
+}
+
+input{
+  color: white;
+}
