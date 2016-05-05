@@ -3,14 +3,15 @@
 <html>
 <head>
 <title>Calculo IMC</title>
+<link rel="stylesheet" type="text/class" href="estilo.css">
 </head>
-<body>
+<body style="font-family:calibri;">
 
 <h1>Calculo de Indice de Massa Corporea</h1>
 
 <form>
-	Digite seu peso (kg): <input name="peso"> <br>
-	Digite sua altura (m): <input name="altura"> <br>
+	Digite seu peso (kg): <input name="peso" class="dados"> <br>
+	Digite sua altura (m): <input name="altura" class="dados"> <br>
 	
 	<%
 	float peso = request.Parameter("peso");
@@ -33,7 +34,7 @@
 }else if(imc>=35&&imc<=39,99){
 	out.print("Obesidade nivel II!");
 }else if{
-	out.print("Obesidade mórbida!");
+	out.print("Obesidade mÃ³rbida!");
 } %>
 
 </body>
