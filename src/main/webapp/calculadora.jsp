@@ -13,6 +13,28 @@
 	Operador 2: <input name="operador2">
 	<br>
 	<button>Calcular</button>
+	
+<!-- Essa eh uma funcao que simplifica pegar os parametros
+<%! public String valor(HttpServletRequest req, String param, String padrao){
+	
+	String result = req.getParameter(param);
+	if(result==null){
+		result = padrao;
+}
+	return result;
+	}
+
+public int toInt(HttpServletRequest req, String param, String padrao){
+	return Integer.parseInt(valor(req,param,padrao));
+}
+
+%>
+
+int operador1Int = toInt(request, "operador1","0");
+String operacaoStr = valor(request, "operacao","");
+int operador2Int= toInt(request,"operador2","0");
+
+ -->
 
 <%
 	String operador1Str = request.getParameter("operador1");
@@ -31,6 +53,10 @@
 		operador2Str="0";
 	}
 	int operador2Int = Integer.parseInt(operador2Str);
+	
+	//o calculo foi colocado na classe java
+	
+	
 	
 	//Calculo
 	int resultado = 0;
